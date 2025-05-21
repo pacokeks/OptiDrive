@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
         <a class="navbar-brand" href="#">Picar-X</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -19,6 +19,9 @@
                 <li class="nav-item"><a class="nav-link" href="#features">Funktionen</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">Überblick</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php">Start</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.php">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
             </ul>
         </div>
     </div>
