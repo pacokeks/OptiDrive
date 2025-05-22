@@ -1,29 +1,113 @@
+/* Google Fonts */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-.hero-section {
-    background: linear-gradient(to right, #0d6efd, #6610f2);
-    min-height: 80vh;
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.navbar {
-    transition: background-color 0.3s ease;
+/* Header */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px 0;
 }
 
-.card {
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.btn-primary {
-    background-color: #0d6efd;
-    border: none;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
 }
 
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Clear floats */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px;
+    background-color: #e6f0ff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Footer */
 footer {
-    font-size: 0.9rem;
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo, nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+footer a:hover {
+    color: #0d6efd;
+    text-decoration: none;
+}
+.navbar .nav-link {
+  color: white !important;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+.navbar .nav-link.active {
+  border-bottom: 2px solid #fff;
 }
